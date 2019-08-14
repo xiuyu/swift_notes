@@ -1,20 +1,14 @@
 //
-//  SortViewController.swift
+//  Sort.swift
 //  algorithm
 //
-//  Created by xiuyu on 2019/7/26.
+//  Created by 丘秀玉 on 2019/8/14.
 //  Copyright © 2019 xiuyu. All rights reserved.
 //
 
 import UIKit
 
-class SortViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
+class Sort: NSObject {
     /// 堆排序
     ///
     /// - Parameter array: 待排数组

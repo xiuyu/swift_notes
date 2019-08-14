@@ -8,6 +8,34 @@
 
 import SnapKit
 import UIKit
+import YYKit
+
+protocol Container {
+    associatedtype ItemType:Equatable
+    
+    mutating func append(item: ItemType)
+    
+    var count: Int { get }
+    
+    subscript(i: Int) -> ItemType { get }
+}
+
+struct IntStack: Container {
+    var items = [ItemType]()
+    mutating func append(item: Int) {
+        self.items.append(item)
+    }
+    
+    var count: Int {
+        return self.items.count
+    }
+    
+    subscript(i: Int) -> Int {
+        return self.items[i]
+    }
+    
+    typealias ItemType = Int
+}
 
 class HomeViewController: UIViewController {
     override func viewDidLoad() {
@@ -18,7 +46,73 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.barStyle = .black
         
+//        let age = -3
+//        assert(age > 0, "A person's age cannot be less than zero")
+        
         self.setUpUI()
+        
+        PersonOC.print()
+        
+//        let net = NetWorking()
+        
+//        net.request()
+        
+        let addTwo = addTo(adder: 2)
+        
+        let result = addTwo(6)
+        
+        print(result)
+        
+        let greaterThan10 = greaterThan(compare: 10)
+        
+        print(greaterThan10(9))
+        print(greaterThan10(13))
+        
+        logIfTrue(2 > 1)
+    }
+    
+    func findIndex<T: Equatable>(param: T, array: [T]) -> Int? {
+        for (i, item) in array.enumerated() {
+            if item == param {
+                return i
+            }
+        }
+        return nil
+    }
+    
+    func myMethod(obj: AnyObject) {
+        objc_sync_enter(obj)
+        
+        //// 在 enter 和 exit 之间 anObj 不会被其他线程改变
+        objc_sync_exit(obj)
+    }
+    
+    // 自动闭包
+    func logIfTrue(_ predicate: @autoclosure () -> Bool) {
+        if predicate() {
+            print("True")
+        }
+    }
+    
+    @objc func commonFun() {
+    }
+    
+    @objc func commonFun(num: Int) {
+    }
+    
+    // 坷里化
+    func addTo(adder: Int) -> (Int) -> Int {
+        return {
+            num in
+            num + adder
+        }
+    }
+    
+    func greaterThan(compare: Int) -> (Int) -> Bool {
+        return {
+            num in
+            num > compare
+        }
     }
     
     func setUpUI() {

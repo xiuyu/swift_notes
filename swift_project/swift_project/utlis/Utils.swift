@@ -19,4 +19,5 @@ var viewBackGroundColor: UIColor = UIColor(hexString: "#F8F8F8")
 var lineBackGroundColor: UIColor = UIColor(hexString: "#dddddd")
 
 class Utils: NSObject {
+    
 }

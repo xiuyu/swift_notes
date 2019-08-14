@@ -18,6 +18,10 @@
 		C485035722FA6540009C0606 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485035622FA6540009C0606 /* Utils.swift */; };
 		C485035922FA689F009C0606 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485035822FA689F009C0606 /* UIColorHex.swift */; };
 		C485035B22FA7AB1009C0606 /* PersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485035A22FA7AB1009C0606 /* PersonViewCell.swift */; };
+		C485035D22FAB83E009C0606 /* Asyncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485035C22FAB83E009C0606 /* Asyncs.swift */; };
+		C485035F22FACBBE009C0606 /* AsyncAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485035E22FACBBE009C0606 /* AsyncAfter.swift */; };
+		C485036322FD20D1009C0606 /* PersonOC.m in Sources */ = {isa = PBXBuildFile; fileRef = C485036222FD20D1009C0606 /* PersonOC.m */; };
+		C485036522FD4DD2009C0606 /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485036422FD4DD2009C0606 /* NetWorking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,12 @@
 		C485035622FA6540009C0606 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C485035822FA689F009C0606 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		C485035A22FA7AB1009C0606 /* PersonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewCell.swift; sourceTree = "<group>"; };
+		C485035C22FAB83E009C0606 /* Asyncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asyncs.swift; sourceTree = "<group>"; };
+		C485035E22FACBBE009C0606 /* AsyncAfter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAfter.swift; sourceTree = "<group>"; };
+		C485036022FD1E9D009C0606 /* swift_project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_project-Bridging-Header.h"; sourceTree = "<group>"; };
+		C485036122FD20D1009C0606 /* PersonOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonOC.h; sourceTree = "<group>"; };
+		C485036222FD20D1009C0606 /* PersonOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonOC.m; sourceTree = "<group>"; };
+		C485036422FD4DD2009C0606 /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 				C485034122FA62C5009C0606 /* Assets.xcassets */,
 				C485034322FA62C5009C0606 /* LaunchScreen.storyboard */,
 				C485034622FA62C5009C0606 /* Info.plist */,
+				C485036022FD1E9D009C0606 /* swift_project-Bridging-Header.h */,
 			);
 			path = swift_project;
 			sourceTree = "<group>";
@@ -114,6 +125,8 @@
 			children = (
 				C485035622FA6540009C0606 /* Utils.swift */,
 				C485035822FA689F009C0606 /* UIColorHex.swift */,
+				C485035C22FAB83E009C0606 /* Asyncs.swift */,
+				C485035E22FACBBE009C0606 /* AsyncAfter.swift */,
 			);
 			path = utlis;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		C485035022FA64BF009C0606 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				C485036422FD4DD2009C0606 /* NetWorking.swift */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -138,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				C485035422FA651A009C0606 /* HomeViewController.swift */,
+				C485036122FD20D1009C0606 /* PersonOC.h */,
+				C485036222FD20D1009C0606 /* PersonOC.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -266,12 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C485035D22FAB83E009C0606 /* Asyncs.swift in Sources */,
+				C485035F22FACBBE009C0606 /* AsyncAfter.swift in Sources */,
+				C485036522FD4DD2009C0606 /* NetWorking.swift in Sources */,
 				C485035722FA6540009C0606 /* Utils.swift in Sources */,
 				C485033D22FA62C3009C0606 /* ViewController.swift in Sources */,
 				C485034D22FA63CD009C0606 /* PersonViewController.swift in Sources */,
 				C485035922FA689F009C0606 /* UIColorHex.swift in Sources */,
 				C485033B22FA62C3009C0606 /* AppDelegate.swift in Sources */,
 				C485035B22FA7AB1009C0606 /* PersonViewCell.swift in Sources */,
+				C485036322FD20D1009C0606 /* PersonOC.m in Sources */,
 				C485035522FA651A009C0606 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 94MGHZ6CZS;
 				INFOPLIST_FILE = swift_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiuyu.swift-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_project/swift_project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 94MGHZ6CZS;
 				INFOPLIST_FILE = swift_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiuyu.swift-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_project/swift_project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,7 +14,11 @@
 		C4EEDF3B22E9FE5D00E8920E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEDF3922E9FE5D00E8920E /* Main.storyboard */; };
 		C4EEDF3D22E9FE6000E8920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EEDF3C22E9FE6000E8920E /* Assets.xcassets */; };
 		C4EEDF4022E9FE6000E8920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEDF3E22E9FE6000E8920E /* LaunchScreen.storyboard */; };
-		C4EEDF4A22EAF88000E8920E /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EEDF4922EAF88000E8920E /* SortViewController.swift */; };
+		C4FAEE0D2303EBE2000C3DC4 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE0C2303EBE2000C3DC4 /* ListNode.swift */; };
+		C4FAEE0F2303EDE4000C3DC4 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE0E2303EDE4000C3DC4 /* LinkList.swift */; };
+		C4FAEE142303F235000C3DC4 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE132303F235000C3DC4 /* Sort.swift */; };
+		C4FAEE182303FD46000C3DC4 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE172303FD46000C3DC4 /* TreeNode.swift */; };
+		C4FAEE1A23040120000C3DC4 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE1923040120000C3DC4 /* BinaryTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +31,11 @@
 		C4EEDF3C22E9FE6000E8920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4EEDF3F22E9FE6000E8920E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4EEDF4122E9FE6000E8920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4EEDF4922EAF88000E8920E /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		C4FAEE0C2303EBE2000C3DC4 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		C4FAEE0E2303EDE4000C3DC4 /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
+		C4FAEE132303F235000C3DC4 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		C4FAEE172303FD46000C3DC4 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		C4FAEE1923040120000C3DC4 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,61 @@
 		C4EEDF3422E9FE5D00E8920E /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C4FAEE152303F287000C3DC4 /* LeetCode */,
+				C4FAEE162303FCE7000C3DC4 /* 二叉树 */,
+				C4FAEE122303F21F000C3DC4 /* 排序 */,
+				C4FAEE112303F1D3000C3DC4 /* 栈 */,
+				C4FAEE102303F1BF000C3DC4 /* 链表 */,
 				C4EEDF3522E9FE5D00E8920E /* AppDelegate.swift */,
 				C4EEDF3722E9FE5D00E8920E /* ViewController.swift */,
 				C4EEDF3922E9FE5D00E8920E /* Main.storyboard */,
 				C4EEDF3C22E9FE6000E8920E /* Assets.xcassets */,
 				C4EEDF3E22E9FE6000E8920E /* LaunchScreen.storyboard */,
 				C4EEDF4122E9FE6000E8920E /* Info.plist */,
-				C4EEDF4922EAF88000E8920E /* SortViewController.swift */,
-				C485032822F01B84009C0606 /* Stack.swift */,
-				C485032A22F0222E009C0606 /* Code.swift */,
 			);
 			path = algorithm;
+			sourceTree = "<group>";
+		};
+		C4FAEE102303F1BF000C3DC4 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				C4FAEE0C2303EBE2000C3DC4 /* ListNode.swift */,
+				C4FAEE0E2303EDE4000C3DC4 /* LinkList.swift */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		C4FAEE112303F1D3000C3DC4 /* 栈 */ = {
+			isa = PBXGroup;
+			children = (
+				C485032822F01B84009C0606 /* Stack.swift */,
+			);
+			path = "栈";
+			sourceTree = "<group>";
+		};
+		C4FAEE122303F21F000C3DC4 /* 排序 */ = {
+			isa = PBXGroup;
+			children = (
+				C4FAEE132303F235000C3DC4 /* Sort.swift */,
+			);
+			path = "排序";
+			sourceTree = "<group>";
+		};
+		C4FAEE152303F287000C3DC4 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				C485032A22F0222E009C0606 /* Code.swift */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		C4FAEE162303FCE7000C3DC4 /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				C4FAEE172303FD46000C3DC4 /* TreeNode.swift */,
+				C4FAEE1923040120000C3DC4 /* BinaryTree.swift */,
+			);
+			path = "二叉树";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C485032922F01B84009C0606 /* Stack.swift in Sources */,
+				C4FAEE0D2303EBE2000C3DC4 /* ListNode.swift in Sources */,
+				C4FAEE0F2303EDE4000C3DC4 /* LinkList.swift in Sources */,
 				C4EEDF3822E9FE5D00E8920E /* ViewController.swift in Sources */,
 				C4EEDF3622E9FE5D00E8920E /* AppDelegate.swift in Sources */,
-				C4EEDF4A22EAF88000E8920E /* SortViewController.swift in Sources */,
+				C4FAEE1A23040120000C3DC4 /* BinaryTree.swift in Sources */,
+				C4FAEE142303F235000C3DC4 /* Sort.swift in Sources */,
 				C485032B22F0222E009C0606 /* Code.swift in Sources */,
+				C4FAEE182303FD46000C3DC4 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

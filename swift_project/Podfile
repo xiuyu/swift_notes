@@ -8,5 +8,7 @@ target 'swift_project' do
   # Pods for swift_project
 
   pod 'SnapKit'
+  pod 'YYKit'
+  pod 'Alamofire'
 
 end
