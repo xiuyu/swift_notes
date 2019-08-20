@@ -69,6 +69,24 @@ class HomeViewController: UIViewController {
         print(greaterThan10(13))
         
         logIfTrue(2 > 1)
+        
+        
+     
+    }
+    
+    func reverse<T>(_ chars: inout [T],_ start:Int,_ end:Int)  {
+        
+        var start = start , end = end
+        
+        while start > end {
+            swap(&chars, start, end)
+            start += 1
+            end -= 1
+        }
+    }
+    
+    func swap<T>(_ chars: inout [T], _ p: Int, _ q: Int) {
+        (chars[p], chars[q]) = (chars[q], chars[p])
     }
     
     func findIndex<T: Equatable>(param: T, array: [T]) -> Int? {

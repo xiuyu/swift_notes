@@ -19,6 +19,9 @@
 		C4FAEE142303F235000C3DC4 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE132303F235000C3DC4 /* Sort.swift */; };
 		C4FAEE182303FD46000C3DC4 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE172303FD46000C3DC4 /* TreeNode.swift */; };
 		C4FAEE1A23040120000C3DC4 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE1923040120000C3DC4 /* BinaryTree.swift */; };
+		C4FAEE1C23053D95000C3DC4 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE1B23053D95000C3DC4 /* Queue.swift */; };
+		C4FAEE24230BD506000C3DC4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE23230BD506000C3DC4 /* List.swift */; };
+		C4FAEE26230BD70E000C3DC4 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAEE25230BD70E000C3DC4 /* ArrayList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		C4FAEE132303F235000C3DC4 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		C4FAEE172303FD46000C3DC4 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		C4FAEE1923040120000C3DC4 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		C4FAEE1B23053D95000C3DC4 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		C4FAEE23230BD506000C3DC4 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		C4FAEE25230BD70E000C3DC4 /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +74,11 @@
 		C4EEDF3422E9FE5D00E8920E /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C4FAEE22230BD4EF000C3DC4 /* 数组 */,
 				C4FAEE152303F287000C3DC4 /* LeetCode */,
 				C4FAEE162303FCE7000C3DC4 /* 二叉树 */,
 				C4FAEE122303F21F000C3DC4 /* 排序 */,
-				C4FAEE112303F1D3000C3DC4 /* 栈 */,
+				C4FAEE112303F1D3000C3DC4 /* 栈、队列 */,
 				C4FAEE102303F1BF000C3DC4 /* 链表 */,
 				C4EEDF3522E9FE5D00E8920E /* AppDelegate.swift */,
 				C4EEDF3722E9FE5D00E8920E /* ViewController.swift */,
@@ -92,12 +99,13 @@
 			path = "链表";
 			sourceTree = "<group>";
 		};
-		C4FAEE112303F1D3000C3DC4 /* 栈 */ = {
+		C4FAEE112303F1D3000C3DC4 /* 栈、队列 */ = {
 			isa = PBXGroup;
 			children = (
 				C485032822F01B84009C0606 /* Stack.swift */,
+				C4FAEE1B23053D95000C3DC4 /* Queue.swift */,
 			);
-			path = "栈";
+			path = "栈、队列";
 			sourceTree = "<group>";
 		};
 		C4FAEE122303F21F000C3DC4 /* 排序 */ = {
@@ -123,6 +131,15 @@
 				C4FAEE1923040120000C3DC4 /* BinaryTree.swift */,
 			);
 			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		C4FAEE22230BD4EF000C3DC4 /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+				C4FAEE23230BD506000C3DC4 /* List.swift */,
+				C4FAEE25230BD70E000C3DC4 /* ArrayList.swift */,
+			);
+			path = "数组";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +218,11 @@
 				C4FAEE0F2303EDE4000C3DC4 /* LinkList.swift in Sources */,
 				C4EEDF3822E9FE5D00E8920E /* ViewController.swift in Sources */,
 				C4EEDF3622E9FE5D00E8920E /* AppDelegate.swift in Sources */,
+				C4FAEE1C23053D95000C3DC4 /* Queue.swift in Sources */,
+				C4FAEE24230BD506000C3DC4 /* List.swift in Sources */,
 				C4FAEE1A23040120000C3DC4 /* BinaryTree.swift in Sources */,
 				C4FAEE142303F235000C3DC4 /* Sort.swift in Sources */,
+				C4FAEE26230BD70E000C3DC4 /* ArrayList.swift in Sources */,
 				C485032B22F0222E009C0606 /* Code.swift in Sources */,
 				C4FAEE182303FD46000C3DC4 /* TreeNode.swift in Sources */,
 			);
