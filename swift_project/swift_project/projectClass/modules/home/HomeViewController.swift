@@ -6,12 +6,14 @@
 //  Copyright © 2019 xiuyu. All rights reserved.
 //
 
+import PromiseKit
 import SnapKit
 import UIKit
 import YYKit
+import StoreKit
 
 protocol Container {
-    associatedtype ItemType:Equatable
+    associatedtype ItemType: Equatable
     
     mutating func append(item: ItemType)
     
@@ -49,37 +51,91 @@ class HomeViewController: UIViewController {
 //        let age = -3
 //        assert(age > 0, "A person's age cannot be less than zero")
         
-        self.setUpUI()
+//        self.setUpUI()
+//
+//        PersonOC.print()
+//
+        ////        let net = NetWorking()
+//
+        ////        net.request()
+//
+//        let addTwo = addTo(adder: 2)
+//
+//        let result = addTwo(6)
+//
+//        print(result)
+//
+//        let greaterThan10 = greaterThan(compare: 10)
+//
+//        print(greaterThan10(9))
+//        print(greaterThan10(13))
+//
+//        logIfTrue(2 > 1)
         
-        PersonOC.print()
+        // https://res-test.xhjk.com.cn:81/ms-acms/banner_item/img/CJ9BNoAxgEbD0BeG7DtzRywILxe.jpeg
         
-//        let net = NetWorking()
+
+//        cook().then { (data) -> Promise<String> in
+//            return self.eat()
+//        }.done { (data) in
+//            print(data)
+//        }.catch { (err) in
+//            print(err.localizedDescription)
+//        }.finally {
+//            print("上班")
+//        }
         
-//        net.request()
+      cook()
+        .map({ data -> String in
+//            print(data + "，配上一碗汤")
+            return data + "，配上一碗汤"
+        })
+        .then({ (data) -> Promise<String> in
+            return self.eat()
+        })
+        .done { data in
+            print(data)
+        }
         
-        let addTwo = addTo(adder: 2)
-        
-        let result = addTwo(6)
-        
-        print(result)
-        
-        let greaterThan10 = greaterThan(compare: 10)
-        
-        print(greaterThan10(9))
-        print(greaterThan10(13))
-        
-        logIfTrue(2 > 1)
-        
-        
-     
+    
+    
     }
     
-    func reverse<T>(_ chars: inout [T],_ start:Int,_ end:Int)  {
+    func cook() -> Promise<String> {
+        print("开始做饭")
         
-        var start = start , end = end
+        let p = Promise<String> { resolver in
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                print("做饭完毕！")
+                resolver.fulfill("鸡蛋炒饭")
+//                let err = NSError(domain: "PromiseKitTutorial", code: 0, userInfo:[NSLocalizedDescriptionKey:"烧焦的米饭"])
+//                resolver.reject(err)
+            
+            }
+        }
+        
+        return p
+    }
+    
+    func eat() -> Promise<String> {
+        let p = Promise<String> { resolver in
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                print("吃饭完毕！")
+                resolver.fulfill("一块碗和一双筷子")
+            }
+        }
+        
+        return p
+        
+    }
+    
+    func reverse<T>(_ chars: inout [T], _ start: Int, _ end: Int) {
+        var start = start, end = end
         
         while start > end {
-            swap(&chars, start, end)
+            self.swap(&chars, start, end)
             start += 1
             end -= 1
         }
@@ -112,11 +168,9 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @objc func commonFun() {
-    }
+    @objc func commonFun() {}
     
-    @objc func commonFun(num: Int) {
-    }
+    @objc func commonFun(num: Int) {}
     
     // 坷里化
     func addTo(adder: Int) -> (Int) -> Int {

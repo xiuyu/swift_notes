@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39C9CF739D17E7CC3B13E77D /* Pods_swift_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28297800AD5773FAF0C00DC7 /* Pods_swift_project.framework */; };
+		C46E800123B1FCCA00509CC7 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E800023B1FCCA00509CC7 /* ImageUtils.swift */; };
 		C485033B22FA62C3009C0606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485033A22FA62C3009C0606 /* AppDelegate.swift */; };
 		C485033D22FA62C3009C0606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485033C22FA62C3009C0606 /* ViewController.swift */; };
 		C485034022FA62C3009C0606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C485033E22FA62C3009C0606 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		04394BE493F8A2984B91F7F4 /* Pods-swift_project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_project.release.xcconfig"; path = "Target Support Files/Pods-swift_project/Pods-swift_project.release.xcconfig"; sourceTree = "<group>"; };
 		28297800AD5773FAF0C00DC7 /* Pods_swift_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B82B2DC03A425E96E5D303D /* Pods-swift_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_project.debug.xcconfig"; path = "Target Support Files/Pods-swift_project/Pods-swift_project.debug.xcconfig"; sourceTree = "<group>"; };
+		C46E800023B1FCCA00509CC7 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		C485033722FA62C3009C0606 /* swift_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C485033A22FA62C3009C0606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C485033C22FA62C3009C0606 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C485035622FA6540009C0606 /* Utils.swift */,
+				C46E800023B1FCCA00509CC7 /* ImageUtils.swift */,
 				C485035822FA689F009C0606 /* UIColorHex.swift */,
 				C485035C22FAB83E009C0606 /* Asyncs.swift */,
 				C485035E22FACBBE009C0606 /* AsyncAfter.swift */,
@@ -293,6 +296,7 @@
 				C485035B22FA7AB1009C0606 /* PersonViewCell.swift in Sources */,
 				C485036322FD20D1009C0606 /* PersonOC.m in Sources */,
 				C485035522FA651A009C0606 /* HomeViewController.swift in Sources */,
+				C46E800123B1FCCA00509CC7 /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,6 @@ target 'swift_project' do
   pod 'SnapKit'
   pod 'YYKit'
   pod 'Alamofire'
+  pod "PromiseKit", "~> 6.8"
 
 end

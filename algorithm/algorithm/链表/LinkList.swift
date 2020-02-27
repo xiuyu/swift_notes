@@ -21,32 +21,40 @@ class LinkList {
         return node
     }
     
+    
+    /// 递归的方式
+    /// - Parameter head: 头结点
     static func reverse(head: ListNode?) -> ListNode? {
+        
         if head == nil || head?.next == nil {
             return head
         }
         
-        let newHead = LinkList.reverse(head: head?.next)
-        
+        let newHead = reverse(head: head?.next)
         head?.next?.next = head
         head?.next = nil
         
         return newHead
     }
     
+    
+    /// 非递归
+    /// - Parameter head: 头结点
     static func reverse2(head: ListNode?) -> ListNode? {
+       
         if head == nil || head?.next == nil {
             return head
         }
         
+        var newHead:ListNode?
         var h = head
-        var newHead: ListNode?
         
+     
         while h != nil {
-            let tmp = h?.next
+            let temp = h?.next
             h?.next = newHead
             newHead = h
-            h = tmp
+            h = temp
         }
         return newHead
     }

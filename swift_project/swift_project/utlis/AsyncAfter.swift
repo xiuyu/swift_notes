@@ -19,6 +19,7 @@ class AsyncAfter {
     
     private static func _asyncAfter(_ seconds: Double, _ task: @escaping Task, _ mainTask: Task? = nil) {
         let item = DispatchWorkItem(block: task)
+
         
         DispatchQueue.global().async(execute: item)
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4420D2E24064DA000C928CC /* Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4420D2D24064DA000C928CC /* Recursive.swift */; };
 		C485032922F01B84009C0606 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485032822F01B84009C0606 /* Stack.swift */; };
 		C485032B22F0222E009C0606 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485032A22F0222E009C0606 /* Code.swift */; };
 		C4EEDF3622E9FE5D00E8920E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EEDF3522E9FE5D00E8920E /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4420D2D24064DA000C928CC /* Recursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursive.swift; sourceTree = "<group>"; };
 		C485032822F01B84009C0606 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		C485032A22F0222E009C0606 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		C4EEDF3222E9FE5D00E8920E /* algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4420D2C24064B3500C928CC /* 递归 */ = {
+			isa = PBXGroup;
+			children = (
+				C4420D2D24064DA000C928CC /* Recursive.swift */,
+			);
+			path = "递归";
+			sourceTree = "<group>";
+		};
 		C4EEDF2922E9FE5D00E8920E = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		C4EEDF3422E9FE5D00E8920E /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C4420D2C24064B3500C928CC /* 递归 */,
 				C4FAEE22230BD4EF000C3DC4 /* 数组 */,
 				C4FAEE152303F287000C3DC4 /* LeetCode */,
 				C4FAEE162303FCE7000C3DC4 /* 二叉树 */,
@@ -222,6 +233,7 @@
 				C4FAEE24230BD506000C3DC4 /* List.swift in Sources */,
 				C4FAEE1A23040120000C3DC4 /* BinaryTree.swift in Sources */,
 				C4FAEE142303F235000C3DC4 /* Sort.swift in Sources */,
+				C4420D2E24064DA000C928CC /* Recursive.swift in Sources */,
 				C4FAEE26230BD70E000C3DC4 /* ArrayList.swift in Sources */,
 				C485032B22F0222E009C0606 /* Code.swift in Sources */,
 				C4FAEE182303FD46000C3DC4 /* TreeNode.swift in Sources */,
