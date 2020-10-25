@@ -23,7 +23,7 @@ class NetWorking: NSObject {
                           encoding: JSONEncoding.default,
                           headers: nil).response { (response) in
                            
-                            print(response)
+                           print(response)
         }
         
         

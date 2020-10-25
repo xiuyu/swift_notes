@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'BeehiveDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BeehiveDemo
+#  pod 'BeeHive'
+
+  pod 'ModuleNetwork', :path => './ModuleNetwork'
+  pod 'ModuleProtocol', :path => './ModuleProtocol'
+
+  pod 'ModuleA', :path => './ModuleA'
+  pod 'ModuleB', :path => './ModuleB'
+
+end

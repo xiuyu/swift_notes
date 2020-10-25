@@ -1,0 +1,42 @@
+PODS:
+  - BeeHive (1.6.0)
+  - ModuleA (0.1.0):
+    - ModuleNetwork
+    - ModuleProtocol
+  - ModuleB (0.1.0):
+    - ModuleNetwork
+    - ModuleProtocol
+  - ModuleNetwork (0.1.0)
+  - ModuleProtocol (0.1.0):
+    - BeeHive
+
+DEPENDENCIES:
+  - ModuleA (from `./ModuleA`)
+  - ModuleB (from `./ModuleB`)
+  - ModuleNetwork (from `./ModuleNetwork`)
+  - ModuleProtocol (from `./ModuleProtocol`)
+
+SPEC REPOS:
+  trunk:
+    - BeeHive
+
+EXTERNAL SOURCES:
+  ModuleA:
+    :path: "./ModuleA"
+  ModuleB:
+    :path: "./ModuleB"
+  ModuleNetwork:
+    :path: "./ModuleNetwork"
+  ModuleProtocol:
+    :path: "./ModuleProtocol"
+
+SPEC CHECKSUMS:
+  BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
+  ModuleA: b27fdaa721aba811cf54c4644abee81626970ce5
+  ModuleB: 7d3273dc1c795c8ae335f8e1181d1b8c74d10bba
+  ModuleNetwork: 142c5c6b77d67dcc0f537547ae1a22994c1ce485
+  ModuleProtocol: 92e55c968115e9e11c536f61fc8b9302cc269d18
+
+PODFILE CHECKSUM: 7ea529ab047c3c6b3fe8ffe21cb56cd6bdb5643f
+
+COCOAPODS: 1.9.3
